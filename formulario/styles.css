@@ -45,7 +45,7 @@ textarea {
     resize: vertical;
 }
 
-button[type="enviar"] {
+button[type="submit"] {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -54,6 +54,6 @@ button[type="enviar"] {
     cursor: pointer;
 }
 
-button[type="enviar"]:hover {
+button[type="submit"]:hover {
     background-color: #0056b3;
 }
