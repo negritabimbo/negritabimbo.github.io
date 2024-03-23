@@ -1,6 +1,6 @@
 body {
   font-family: 'Casandra', sans-serif;
-  background-color: #f8f9fa;
+  background-color: #C682C6;
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  background-color: #ffffff;
-  border: 1px solid #ced4da;
+  background-color: #EAD6FF;
+  border: 1px solid #3C027A;
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #495057;
+  color: #924F92;
 }
 
 .link-list {
@@ -36,7 +36,7 @@ h1 {
 a {
   display: block;
   padding: 12px;
-  border: 1px solid #007bff;
+  border: 1px solid #E252A5;
   border-radius: 8px;
   text-decoration: none;
   color: #ff00ff;
