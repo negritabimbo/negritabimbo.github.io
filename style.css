@@ -39,12 +39,12 @@ a {
   border: 1px solid #E252A5;
   border-radius: 8px;
   text-decoration: none;
-  color: #ff00ff;
+  color: #996BB2;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 a:hover {
-  background-color: #007bff;
+  background-color: #F2C4EB;
   color: #ffffff;
 }
