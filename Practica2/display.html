@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body onload="displayInfo()">
+    <div class="container">
+        <h2>User Details</h2>
+        <div class="user-details">
+            <div class="image-and-input">
+                <div class="profile-section">
+                    <img id="profilePicture"  alt="Profile Picture">
+                    <input type="file" id="changeProfilePicture" name="filename" accept="image/jpeg">
+                    <input type="submit" onclick="changePP()">
+                    
+                </div>
+                <div class="text-fields">
+                    <p><strong>Usuario:</strong> <span id="username"></span></p>
+                    <p><strong>Nombre Completo:</strong> <span id="fullName"></span></p>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Experiencia:</strong> <span id="experience"></span></p>
+                    <p><strong>Creditos:</strong> <span id="credits"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

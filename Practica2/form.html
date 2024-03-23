@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <input id="nombre" type="text" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="email" placeholder="Email" id="correo" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="ID" id="ID" placeholder="ID" required>
+            <input type="text" placeholder="NombreUsuario" id="Nombre Usuario" required>
+            <button onclick="Regg()">Registrar</button>
+        </form>
+        <button onclick="goBack()">Atras</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
+
+
+
