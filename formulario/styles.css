@@ -63,7 +63,7 @@ body.dark-mode {
   color: #fff;
 }
 
-.container.dark-mode {
+div.container.dark-mode {
   background-color: #444;
   border-color: #555;
 }
