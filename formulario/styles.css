@@ -88,3 +88,8 @@ input.dark-mode{
   color: #fff;
 
 }
+
+h2.dark-mode {
+  background-color: #fff;
+  color: #333;
+}
