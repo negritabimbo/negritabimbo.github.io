@@ -73,7 +73,7 @@ form.dark-mode{
   color: #fff;
 }
 
-.form-group.dark-mode{
+div.form-group.dark-mode{
   background-color: #333;
   color: #fff;
 }
