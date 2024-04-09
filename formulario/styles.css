@@ -60,7 +60,7 @@ button[type="submit"]:hover {
 
 body.dark-mode {
   background-color: #333;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 div.container.dark-mode {
@@ -70,26 +70,25 @@ div.container.dark-mode {
 
 form.dark-mode{
   background-color: #333;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 div.dark-mode{
   background-color: #333;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 button.dark-mode {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #333;
 }
 
 input.dark-mode{
   background-color: #333;
-  color: #fff;
+  color: #FFFFFF;
 
 }
 
 h2.dark-mode {
-  background-color: #fff;
-  color: #333;
+  color: #FFFFFF;
 }
