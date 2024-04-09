@@ -8,6 +8,7 @@ function DarkMode()
     //classList.toggle("dark-mode");
     body.classList.toggle("dark-mode");
     form.classList.toggle("dark-mode");
+    div.form-group.classList.toggle("dark-mode");
 
 
 }
