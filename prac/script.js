@@ -2,7 +2,7 @@ const urlTraducciones = 'idiomas.json';
 
 // Función para cambiar el idioma
 function cambiarIdioma(idioma) {
-    fetch(urlTraducciones)
+    fetch('idiomas.json')
         .then(response => response.json())
         .then(data => {
             const traduccion = data[idioma];
