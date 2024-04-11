@@ -27,27 +27,28 @@ async function fetchTranslations() {
     return translations;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Cargar el archivo JSON de idiomas
-    function cambiarIdioma(idioma) 
-    {
-        const translations = await fetchTranslations();
-        const translation = translations[idioma];
-        const bigTextElement = document.getElementById("titulo");
-        const paragraphElement = document.getElementById("texto");
-        bigTextElement.textContent = translation.titulo;
-        paragraphElement.textContent = translation.texto;
-    }
-   
+async function updateTextContent(language) {
+    const translations = await fetchTranslations();
+    const translation = translations[language];
+    const bigTextElement = document.getElementById("big-text");
+    const paragraphElement = document.getElementById("paragraph");
+    bigTextElement.textContent = translation.big_text;
+    paragraphElement.textContent = translation.paragraph;
+}
+
+const languageButtons = document.querySelectorAll('.language-button');
+languageButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const language = this.getAttribute('data-lang');
+        updateTextContent(language);
+    });
+});
             
-            // Event listeners para cada botón
+            /* Event listeners para cada botón
             document.getElementById('en').addEventListener('click', function() {
                 cambiarIdioma('en');
             });
             document.getElementById('es').addEventListener('click', function() {
                 cambiarIdioma('es');
-            });
-            // Repetir para los otros botones
-            
-        })
-});
+            });*/
+
