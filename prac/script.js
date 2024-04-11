@@ -34,9 +34,16 @@ async function updateTextContent(language) {
     const paragraphElement = document.getElementById("paragraph");
     bigTextElement.textContent = translation.big_text;
     paragraphElement.textContent = translation.paragraph;
+
+    document.getElementById('en').addEventListener('click', function() {
+                 const language = this.getAttribute('data-lang');
+        updateTextContent(language);
 }
 
-const languageButtons = document.querySelectorAll('.language-button');
+
+
+                                                   
+const languageButtons = document.querySelectorAll('.botones');
 languageButtons.forEach(button => {
     button.addEventListener('click', function() {
         const language = this.getAttribute('data-lang');
