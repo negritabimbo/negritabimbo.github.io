@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consulta</title>
+    <!-- Incluye los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados con la paleta de colores proporcionada */
+        body {
+            background-color: #F0EAD2;
+            color: #6C584C;
+        }
+        .bg-dark-custom {
+            background-color: #ADD178 !important;
+            color: #6C584C !important;
+        }
+        .btn-custom {
+            background-color: #dde5b4;
+            border-color: #dde5b4;
+            color: #6C584C;
+        }
+        .btn-custom:hover {
+            background-color: #A98467;
+            border-color: #A98467;
+            color: #6C584C;
+        }
+        .table{
+            color: #6C584C;
+        }
+
+        .table td{
+            color: #6C584C;
+            vertical-align: middle;
+        }
+
+        .center-group {
+            display: flex;
+            justify-content: center;
+        }
+        .btn-primary {
+            background-color: #dde5b4;
+            border-color: #dde5b4;
+            color: #6C584C;
+        }
+        .btn-primary:hover {
+            background-color: #A98467;
+            border-color: #A98467;
+            color: #6C584C;
+        }
+        .center-group{
+            color: #6C584C;
+        }
+        .form-check-input:checked {
+            background-color: #A98467;
+            border-color:  #A98467;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-dark-custom text-white py-4">
+        <div class="container">
+            <h1 class="display-4">Perritos y gatitos asociados</h1>
+            <p class="lead">Bienvenido al sistema de consulta de empleados de la empresa PyGAs</p>
+        </div>
+    </header>
+
+    <!-- Cuerpo -->
+
+        <div class="row">
+            <div class="col">
+                <h2>Empleados</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo Electrónico</th>
+                                <th>Teléfono</th>
+                                <th>Foto</th>
+                                <th>direccion</th>
+                                <th>nota</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td><%= user.nombre %></td>
+                                    <td><%= user.apellidos %></td>
+                                    <td><%= user.correo %></td>
+                                    <td><%= user.telefono %></td>
+                                    <td><img src="/uploads/<%= user.foto %>" style="width: 70px; height: 70px;" class="img-fluid" alt="Foto de <%= user.nombre %>"></td>
+                                    <td><%= user.direccion%></td>
+                                    <td><%= user.nota%></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br><br>
+                <a href = '/' class="btn btn-custom" type="">Regresar a pagina de inicio</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark-custom text-white py-3 mt-5">
+        <div class="container">
+            <p class="text-center">© 2024</p>
+        </div>
+    </footer>
+
+    <!-- Incluye el script de Bootstrap (opcional, solo si necesitas funcionalidades como el componente de navegación responsivo) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
